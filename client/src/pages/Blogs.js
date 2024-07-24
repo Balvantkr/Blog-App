@@ -7,7 +7,7 @@ const Blogs = () => {
   //get blogs
   const getAllBlogs = async () => {
     try {
-      const { data } = await axios.get('/api/v1/blog/all-blog');
+      const { data } = await axios.get('https://blog-app-gbpx.onrender.com/api/v1/blog/all-blog');
       if (data?.success) {
         setBlogs(data?.blogs);
       }

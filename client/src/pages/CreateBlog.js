@@ -25,7 +25,7 @@ const CreateBlog = () => {
         e.preventDefault();
         // console.log(inputs);
         try {
-            const { data } = await axios.post('/api/v1/blog/create-blog', {
+            const { data } = await axios.post('https://blog-app-gbpx.onrender.com/api/v1/blog/create-blog', {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,
